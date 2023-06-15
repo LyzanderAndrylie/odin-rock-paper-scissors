@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #1B2A75;
+
+    /* For debugging */
+    /* border: 1px solid red; */
+}
+
+body {
+    min-height: 100vh;
+    background: #ededed;
+    padding: 16px;
+}
+
+/* heading */
+h1 {
+    text-align: center;
+    margin: 16px;
+    font-size: 28px;
+}
+
+#info,
+#container {
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+/* Info */
+#info {
+    background-color: #F0C231;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 8px;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.vertical-line {
+    content: "";
+    border: 1px solid;
+}
+
+/* Container */
+#container {
+    background-color: #F7F7F7;
+    padding: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 60vh;
+}
+
+/* selections */
+.selections {
+    display: flex;
+    max-width: 450px;
+    gap: 8px;
+}
+
+/* Title */
+.title {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+/* VS */
+#vs {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Image */
+img {
+    max-width: 100%;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+}
+
+#reset > button {
+    background-color: #D61518;
+    color: #F7F7F7;
+    border-radius: 20px;
+
+    max-width: 450px;
+    height: 48px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    flex: 1;
+}
