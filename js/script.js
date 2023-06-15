@@ -31,28 +31,32 @@ function getComputerChoice() {
  * @returns {string} message that inform the result.
  */
 function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase();
-    computerSelection = computerSelection.toLowerCase();
+    const playerSelectionLower = playerSelection.toLowerCase();
+    const computerSelectionLower = computerSelection.toLowerCase();
 
-    // Check playerSelection validity
-    if (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors") {
+    if (playerSelectionIsValid(playerSelectionLower)) {
         return "Player selection invalid!"
     }
 
     // Create adjacency list for Rock Paper Scissors directed graph.
     // Edge (x, y) means x beats y.
-    const adjList = new Map();
-    adjList.set("rock", "scissors");
-    adjList.set("scissors", "paper");
-    adjList.set("paper", "rock");
+    const adjList = new Map([
+        ["rock", "scissors"],
+        ["scissors", "paper"],
+        ["paper", "rock"]
+    ]);
 
-    if (playerSelection === computerSelection) {
-        return `Draw! ${wordTitleCase(playerSelection)} draws with ${wordTitleCase(computerSelection)}`;
-    } else if (adjList.get(playerSelection) === computerSelection) {
-        return `You Win! ${wordTitleCase(playerSelection)} beats ${wordTitleCase(computerSelection)}`;
+    if (playerSelectionLower === computerSelectionLower) {
+        return `Draw! ${wordTitleCase(playerSelectionLower)} draws with ${wordTitleCase(computerSelectionLower)}`;
+    } else if (adjList.get(playerSelectionLower) === computerSelectionLower) {
+        return `You Win! ${wordTitleCase(playerSelectionLower)} beats ${wordTitleCase(computerSelectionLower)}`;
     } else {
-        return `You Lose! ${wordTitleCase(playerSelection)} is defeated by ${wordTitleCase(computerSelection)}`
+        return `You Lose! ${wordTitleCase(playerSelectionLower)} is defeated by ${wordTitleCase(computerSelectionLower)}`
     }
+}
+
+function playerSelectionIsValid(playerSelection) {
+    return playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors";
 }
 
 /**
