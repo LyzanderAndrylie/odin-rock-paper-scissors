@@ -11,11 +11,31 @@
 </head>
 
 <body>
-    <h1 class="center">Rock Paper Scissors</h1>
+    <h1>Rock Paper Scissors</h1>
+    <h2>First to 5 win the game</h2>
     <div id="info" class="center">
-        <div id="round">Round</div>
+        <div id="round">
+            <div>Round</div>
+            <div id="round-number">0</div>
+        </div>
         <div class="vertical-line"></div>
-        <div id="score">Score</div>
+        <div id="score">
+            <div>Score</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>You</th>
+                        <th rowspan="2">Computer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="player-score">0</td>
+                        <td id="computer-score">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <div id="result"></div>
     <div id="container">
@@ -23,34 +43,34 @@
             <div class="title">Player Selection</div>
             <div class="selections">
                 <div>
-                    <img src="./img/rock.png" alt="rock">
+                    <input type="image" src="./img/rock.png" alt="rock">
                 </div>
                 <div>
-                    <img src="./img/paper.png" alt="paper">
+                    <input type="image" src="./img/paper.png" alt="paper">
                 </div>
                 <div>
-                    <img src="./img/scissors.png" alt="scissors">
+                    <input type="image" src="./img/scissors.png" alt="scissors">
                 </div>
             </div>
         </div>
         <div id="vs">VS</div>
         <div id="bot">
-            <div class="title">Bot Selection</div>
+            <div class="title">Computer Selection</div>
             <div class="selections">
                 <div>
-                    <img src="./img/rock.png" alt="rock">
+                    <input type="image" src="./img/rock.png" alt="rock">
                 </div>
                 <div>
-                    <img src="./img/paper.png" alt="paper">
+                    <input type="image" src="./img/paper.png" alt="paper">
                 </div>
                 <div>
-                    <img src="./img/scissors.png" alt="scissors">
+                    <input type="image" src="./img/scissors.png" alt="scissors">
                 </div>
             </div>
         </div>
     </div>
-    <div id="reset">
-        <button>Reset</button>
+    <div id="button">
+        <button class="play">Play</button>
     </div>
 </body>
 

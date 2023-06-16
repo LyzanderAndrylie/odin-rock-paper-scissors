@@ -8,7 +8,7 @@
     color: #1B2A75;
 
     /* For debugging */
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 body {
@@ -18,10 +18,17 @@ body {
 }
 
 /* heading */
-h1 {
+h1{
     text-align: center;
     margin: 16px;
+    margin: 16px 16px 8px;
     font-size: 28px;
+}
+
+h2 {
+    text-align: center;
+    margin: 8px 16px 16px;
+    font-size: 18px;
 }
 
 #info,
@@ -38,7 +45,9 @@ h1 {
     background-color: #F0C231;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 8px;
+
     font-size: 18px;
+    font-weight: bold;
 
     display: flex;
     justify-content: space-evenly;
@@ -48,6 +57,23 @@ h1 {
 .vertical-line {
     content: "";
     border: 1px solid;
+}
+
+#round {
+    display: flex;
+    flex-direction: column;
+}
+
+#round-number {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+
+table {
+    border-spacing: 4px;
 }
 
 /* Container */
@@ -86,17 +112,20 @@ h1 {
 }
 
 /* Image */
-img {
+input[type="image"] {
     max-width: 100%;
+    border-radius: 50%;
 }
 
-#reset {
+#button {
     display: flex;
     justify-content: center;
 }
 
-#reset > button {
-    background-color: #D61518;
+#button > .reset,
+#button > .play {
+    border: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: #F7F7F7;
     border-radius: 20px;
 
@@ -107,4 +136,12 @@ img {
     font-weight: bold;
 
     flex: 1;
+}
+
+.reset {
+    background-color: #D61518;
+}
+
+.play {
+    background-color: #1E94D4;
 }
