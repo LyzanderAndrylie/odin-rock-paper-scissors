@@ -8,7 +8,7 @@
     color: #1B2A75;
 
     /* For debugging */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -115,6 +115,11 @@ table {
 input[type="image"] {
     max-width: 100%;
     border-radius: 50%;
+    filter: brightness(50%);
+}
+
+#player input[type="image"]:hover {
+    filter: brightness(100%);
 }
 
 #button {
@@ -128,6 +133,7 @@ input[type="image"] {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     color: #F7F7F7;
     border-radius: 20px;
+    margin: 8px;
 
     max-width: 450px;
     height: 48px;
