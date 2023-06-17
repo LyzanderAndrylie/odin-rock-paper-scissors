@@ -4,11 +4,16 @@ This project is created to practice coding with JavaScript.
 
 ## Result
 
-TBA
+Check out here! :smile:
+
+:link: <https://lyzanderandrylie.github.io/odin-rock-paper-scissors/>
 
 ## Requirements
 
-To check out full requirements, click this [link](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors "Project: Rock Paper Scissors")  
+To check out full requirements, click the links below.
+
+- [Project: Rock Paper Scissors](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
+- [Revisiting Rock Paper Scissors](https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors)
 
 ## Note
 
@@ -19,4 +24,4 @@ List of resources that helped me to create this project:
 - [\<input type="image"\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/image)
 - [How to remove all event listeners from a DOM element in Javascript](https://techoverflow.net/2019/12/26/how-to-remove-all-event-listeners-from-a-dom-element-in-javascript/)
 - [How to darken an Image using CSS ?](https://www.geeksforgeeks.org/how-to-darken-an-image-using-css/)
-- [Sleep in JavaScript](https://www.sitepoint.com/delay-sleep-pause-wait/)
+- [Delay in JavaScript](https://www.sitepoint.com/delay-sleep-pause-wait/)

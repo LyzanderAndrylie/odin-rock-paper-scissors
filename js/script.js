@@ -92,7 +92,6 @@ function addAllSelectionsListener() {
                     enableAllInput();
                 }
             }, 1000);
-
         })
     });
 }
@@ -228,9 +227,7 @@ function addPlayButton() {
     const playButton = document.createElement("button");
     playButton.textContent = "Play";
     playButton.classList.add("play");
-    playButton?.addEventListener("click", () => {
-        game();
-    });
+    playButton?.addEventListener("click", game);
 
     const buttonContainer = document.getElementById("button");
     buttonContainer?.replaceChildren(playButton);
